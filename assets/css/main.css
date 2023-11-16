@@ -3768,7 +3768,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		max-width: 48%;
+		max-width: 30%;
 	}
 
 		#cta .inner header {
