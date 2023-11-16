@@ -34,7 +34,7 @@ div{	margin: 0;
 	font: inherit;
 	vertical-align: baseline;
 	text-align: center;
-}}
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3768,7 +3768,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		max-width: 30%;
+		max-width: 20em;
 	}
 
 		#cta .inner header {
