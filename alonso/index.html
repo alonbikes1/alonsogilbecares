@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alonso</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+</head>
+<!--
+    https://img-comparison-slider.sneas.io/examples.html
+    https://github.com/sneas/img-comparison-slider
+-->
+
+<body>
+    <style>
+        .before,
+        .after {
+            margin: 0;
+        }
+
+        .before figcaption,
+        .after figcaption {
+            background: cyan;
+            border: 1px solid cyan;
+            border-radius: 12px;
+            color: cyan;
+            opacity: 0.8;
+            padding: 12px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: 0%;
+        }
+
+        .before figcaption {
+            left: 12px;
+        }
+
+        .after figcaption {
+            right: 12px;
+        }
+    </style>
+
+
+<style>
+  .slider-example-split-line {
+    --divider-width: 1.8px;
+    --divider-color: #00ffff;
+    --default-handle-opacity: 0;
+  }
+</style>
+
+
+    <img-comparison-slider class="slider-example-split-line">
+        <figure slot="first" class="before">
+            <img width="100%" src="img/1.jpg">
+
+        </figure>
+        <figure slot="second" class="after">
+            <img width="100%" src="img/2.jpg">
+
+        </figure>
+    </img-comparison-slider>
+</body>
+
+</html>
