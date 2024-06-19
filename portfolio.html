@@ -1,105 +1,217 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio - Alonso Gil Bécares</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<!DOCTYPE html>
+<html lang="es">
 
-	<body class="is-preload">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Open Sans 400 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Portfolio</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4bd224e08c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./assets/css/custom.css" />
+</head>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<body class="landing portfolio">
+  <!-- Page Wrapper -->
+  <div id="page-wrapper">
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1><a href="index.html">ALONSO GIL BÉCARES</a></h1>
+      <nav id="nav">
+        <ul>
+          <li class="special">
+            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+            <div id="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Portafolio -->
+    <div class="content">
+      <div class="wrapper">
+        <header id="banner">
+          <div class="logo">
+            <h1>Alonso Gil Bécares</h1>
+            <p>Portfolio</p>
+          </div>
+          <div class="categorias">
+            <a href="#" class="activo">Todos</a>
+            <a href="#">Cortos</a>
+            <a href="#">Documentales</a>
+            <a href="#">Videoclips</a>
+            <a href="#">Publicidad</a>
+          </div>
+        </header>
+        <section class="grid alt">
+          <div class="item" data-categoria="videoclips" data-etiquetas="tu version videoclip"
+            data-descripcion="Descripcion de la imagen" data-href="tuversion.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/felipe-01.png" class="clip1" alt="Tu Version" />
+              <img src="./images/portafolio/felipe-02.png" class="clip2" alt="Tu Version" />
+              <img src="./images/portafolio/felipe-03.png" class="clip3" alt="Tu Version" />
+              <img src="./images/portafolio/felipe-04.png" class="clip4" alt="Tu Version" />
+              <img src="./images/portafolio/felipe-05.png" class="clip5" alt="Tu Version" />
+              <img src="./images/portafolio/felipe-06.png" class="clip6" alt="Tu Version" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Tu Versión</span>
+          </div>
+          <div class="item" data-categoria="videoclips" data-etiquetas="Coming for you"
+            data-descripcion="Descripcion de la imagen" data-href="scarlett.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/scarlett-01.png" class="clip1" alt="Coming for you" />
+              <img src="./images/portafolio/scarlett-02.png" class="clip2" alt="Coming for you" />
+              <img src="./images/portafolio/scarlett-03.png" class="clip3" alt="Coming for you" />
+              <img src="./images/portafolio/scarlett-04.png" class="clip4" alt="Coming for you" />
+              <img src="./images/portafolio/scarlett-05.png" class="clip5" alt="Coming for you" />
+              <img src="./images/portafolio/scarlett-06.png" class="clip6" alt="Coming for you" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Coming for you</span>
+          </div>
+          <div class="item" data-categoria="cortos" data-etiquetas="Carcel" data-descripcion="Descripcion de la imagen"
+            data-href="carcel.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/carcel-06.png" class="clip1" alt="carcel" />
+              <img src="./images/portafolio/carcel-01.png" class="clip2" alt="carcel" />
+              <img src="./images/portafolio/carcel-02.png" class="clip3" alt="carcel" />
+              <img src="./images/portafolio/carcel-03.png" class="clip4" alt="carcel" />
+              <img src="./images/portafolio/carcel-04.png" class="clip5" alt="carcel" />
+              <img src="./images/portafolio/carcel-05.png" class="clip6" alt="carcel" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Cárcel</span>
+          </div>
+          <div class="item" data-categoria="cortos" data-etiquetas="Negacionista"
+            data-descripcion="Descripción de la imagen" data-href="negacionista.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/neg-01.png" class="clip1" alt="negacionista" />
+              <img src="./images/portafolio/neg-02.png" class="clip2" alt="negacionista" />
+              <img src="./images/portafolio/neg-03.png" class="clip3" alt="negacionista" />
+              <img src="./images/portafolio/neg-04.png" class="clip4" alt="negacionista" />
+              <img src="./images/portafolio/neg-05.png" class="clip5" alt="negacionista" />
+              <img src="./images/portafolio/neg-06.png" class="clip6" alt="negacionista" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Negacionista</span>
+          </div>
+          <div class="item" data-categoria="publicidad" data-etiquetas="PSOE"
+            data-descripcion="Descripcion de la imagen" data-href="psoe.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/psoe-06.png" class="clip1" alt="PSOE" />
+              <img src="./images/portafolio/psoe-01.png" class="clip2" alt="PSOE" />
+              <img src="./images/portafolio/psoe-02.png" class="clip3" alt="PSOE" />
+              <img src="./images/portafolio/psoe-03.png" class="clip4" alt="PSOE" />
+              <img src="./images/portafolio/psoe-04.png" class="clip5" alt="PSOE" />
+              <img src="./images/portafolio/psoe-05.png" class="clip6" alt="PSOE" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>PSOE</span>
+          </div>
+          <div class="item" data-categoria="cortos" data-etiquetas="Desdoblada"
+            data-descripcion="Descripcion de la imagen" data-href="desdoblada.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/dd-01.png" class="clip1" alt="desdoblada" />
+              <img src="./images/portafolio/dd-02.png" class="clip2" alt="desdoblada" />
+              <img src="./images/portafolio/dd-03.png" class="clip3" alt="desdoblada" />
+              <img src="./images/portafolio/dd-04.png" class="clip4" alt="desdoblada" />
+              <img src="./images/portafolio/dd-05.png" class="clip5" alt="desdoblada" />
+              <img src="./images/portafolio/dd-06.png" class="clip6" alt="desdoblada" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Desdoblada</span>
+          </div>
+          <div class="item" data-categoria="documentales" data-etiquetas="Ina"
+            data-descripcion="Descripcion de la imagen" data-href="ina.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/ina-01.png" class="clip1" alt="ina" />
+              <img src="./images/portafolio/ina-02.png" class="clip2" alt="ina" />
+              <img src="./images/portafolio/ina-03.png" class="clip3" alt="ina" />
+              <img src="./images/portafolio/ina-04.png" class="clip4" alt="ina" />
+              <img src="./images/portafolio/ina-05.png" class="clip5" alt="ina" />
+              <img src="./images/portafolio/ina-06.png" class="clip6" alt="ina" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Ina</span>
+          </div>
+          <div class="item" data-categoria="cortos" data-etiquetas="Pare Nostre"
+            data-descripcion="Descripcion de la imagen" data-href="parenostre.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/parenostre-01.png" class="clip1" alt="parenostre" />
+              <img src="./images/portafolio/parenostre-02.png" class="clip2" alt="parenostre" />
+              <img src="./images/portafolio/parenostre-03.png" class="clip3" alt="parenostre" />
+              <img src="./images/portafolio/parenostre-04.png" class="clip4" alt="parenostre" />
+              <img src="./images/portafolio/parenostre-05.png" class="clip5" alt="parenostre" />
+              <img src="./images/portafolio/parenostre-06.png" class="clip6" alt="parenostre" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Pare Nostre</span>
+          </div>
+          <div class="item" data-categoria="documentales" data-etiquetas="Expresar(se)"
+            data-descripcion="Descripcion de la imagen" data-href="expresarse.html">
+            <div class="item-content" onmousemove="changeImage(event)">
+              <img src="./images/portafolio/expresarse-01.png" class="clip1" alt="expresarse" />
+              <img src="./images/portafolio/expresarse-02.png" class="clip2" alt="expresarse" />
+              <img src="./images/portafolio/expresarse-03.png" class="clip3" alt="expresarse" />
+              <img src="./images/portafolio/expresarse-04.png" class="clip4" alt="expresarse" />
+              <img src="./images/portafolio/expresarse-05.png" class="clip5" alt="expresarse" />
+              <img src="./images/portafolio/expresarse-06.png" class="clip6" alt="expresarse" />
+              <div class="vertical-line"></div>
+            </div>
+            <span>Expresar(se)</span>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <section id="cta" class="wrapper style4" text-align=center>
+        <div class="inner">
+          <div>
+            <h2>CONTACTO</h2>
+            <p id="p-contact">Contacta conmigo para cualquier tipo de consulta o pedido. <br>Actualmente, estoy buscando
+              empleo de montador o auxiliar de montaje. </p>
+            <a href="contacto.html" class="button fit">Más info</a></li>
+          </div>
+        </div>
+      </section>
+      <ul class="icons">
+        <li><a href="https://www.facebook.com/profile.php?id=100006772039636" class="icon brands fa-facebook-f"><span
+              class="label">Facebook</span></a></li>
+        <li><a href="https://www.instagram.com/_alonsogil/" class="icon brands fa-instagram"><span
+              class="label">Instagram</span></a></li>
+        <li><a href="https://www.linkedin.com/in/alonso-gil-b%C3%A9cares-473954172/"
+            class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+        <li><a href="mailto:alonso.gil@escac.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Alonso Gil Bécares (2023)</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/jquery.scrollex.min.js"></script>
+  <script src="./assets/js/jquery.scrolly.min.js"></script>
+  <script src="./assets/js/browser.min.js"></script>
+  <script src="./assets/js/breakpoints.min.js"></script>
+  <script src="./assets/js/util.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
 
-				<!-- Header -->
-				<header id="header" class="alt">
-					<h1><a href="index.html">ALONSO GIL BÉCARES</a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="special">
-								<a href="#menu" class="menuToggle"><span>Menu</span></a>
-								<div id="menu">
-									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li><a href="portfolio.html">Portfolio</a></li>
-										<li><a href="contacto.html">Contacto</a></li>
-
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</nav>
-				</header>
-
-
-				<!-- Main -->
-					<article id="main">
-							<section class="wrapper style5">
-								<div class="inner">
-
-								<h2>PORTFOLIO</h2>
-								<br><h3>TU VERSIÓN - FELIPE BIONDO (2023)</h3>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IFKX35bl99A?si=o2tuYkcKppL2eJNN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-								<br><h3>VÍDEOS REPORTAJE CANDIDATOS PSOE (2023)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4QJq8wS-fLk?si=OD1LbflrhrLU-8Ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OVIcCoNebY0?si=YQI4nDnl62Sudewv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<br><h3>SPOT PRESENTACIÓN CANDIDATO (2022)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tANqgPEX0Pc?si=YgtU0birsp1zwRKz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br><h3>EL NEGACIONISTA (2021)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QaTM8Hv2iV4?si=s1SFwh29Rsanbr9t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<BR><BR><br><h3>FOTOGRAFÍA DEPORTIVA</h3>
-    <a href="images/01futbol.jpg"><img src="images/01futbol.jpg" width="40%" alt=""></a>
-		<a href="images/02ciclismo.jpg"><img src="images/02ciclismo.jpg" width="40%" alt=""></a>
-		<a href="images/03futbol.jpg"><img src="images/03futbol.jpg" width="40%" alt=""></a>
-		<br><br><br><h3>FOTOGRAFÍA de EVENTOS</h3>
-		<a href="images/07eventos.jpg"><img src="images/07eventos.jpg" width="30%" alt=""></a> <h6>*Galardonada con el 2º premio en el Rally Fotográfico de la Semana Renacentista de Medina del Campo 2022.</h6>
-
-		<a href="images/05retrato.jpg"><img src="images/05retrato.jpg" width="40%" alt=""></a>
-		<br><br><br><h3>FOTOGRAFÍA de RETRATOS</h3>
-	<a href="images/06retrato.jpg">	<img src="images/06retrato.jpg" width="40%" alt=""></a>
-
-		<a href="images/04retrato.jpg"><img src="images/04retrato.jpg" width="40%" alt=""></a>
-		<br><br><br><h3>DISEÑO GRÁFICO</h3>
-		<a href="images/07diseñografico.png"><img src="images/07diseñografico.png" width="30%" alt=""></a>
-		<a href="images/09diseñografico.jpg"><img src="images/09diseñografico.jpg" width="30%" alt=""></a>
-
-							</div>
-						</section>
-					</article>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/profile.php?id=100006772039636" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/_alonsogil/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.linkedin.com/in/alonso-gil-b%C3%A9cares-473954172/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-						<li><a href="mailto:alonso.gil@escac.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Alonso Gil Bécares (2023)</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>

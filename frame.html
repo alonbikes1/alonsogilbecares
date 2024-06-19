@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor Images</title>
+    <style>
+        .photo {
+            position: relative;
+            display: flex;
+            width: 200px;
+            height: 150.8px;
+        }
+
+        .photo .clip1,
+        .photo .clip2,
+        .photo .clip3,
+        .photo .clip4,
+        .photo .clip5,
+        .photo .clip6 {
+            display: inline-block;
+            width: 200%;
+            height: 150% auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .photo .clip2,
+        .photo .clip3,
+        .photo .clip4,
+        .photo .clip5,
+        .photo .clip6 {
+            display: none;
+        }
+
+        .photo .show {
+            display: inline-block;
+        }
+
+        .vertical-line {
+            position: absolute;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: cyan;
+        }
+
+        .photo .vertical-line {
+            display: none;
+        }
+
+        .photo:hover .vertical-line {
+            display: inline-block;
+        }
+    </style>
+    <script>
+        function changeImage(event) {
+            var elems = document.querySelectorAll('.show');
+            [].forEach.call(elems, function (el) {
+                el.className = el.className.replace(' show', '');
+            });
+
+            var photo = document.getElementsByClassName('photo')[0];
+            if (photo.matches(':hover')) {
+                var x = event.clientX - 11;
+
+                var ele = document.querySelector('.clip1');
+                var eleStyle = window.getComputedStyle(ele);
+                var width = parseInt(eleStyle.width, 10);
+
+                var i = parseInt(6 * x / width) + 1;
+
+                var element = document.getElementsByClassName('clip' + i)[0];
+                element.className += ' show';
+
+                var line = document.getElementsByClassName('vertical-line')[0];
+                line.style.left = x + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="photo" onmousemove="changeImage(event)">
+        <img src="images/stills/felipe-01.png" class="clip1" />
+        <img src="images/stills/felipe-02.png" class="clip2" />
+        <img src="images/stills/felipe-03.png" class="clip3" />
+        <img src="images/stills/felipe-04.png" class="clip4" />
+        <img src="images/stills/felipe-05.png" class="clip5" />
+        <img src="images/stills/felipe-06.png" class="clip6" />
+        <div class="vertical-line"></div>
+    </div>
+</body>
+
+</html>
