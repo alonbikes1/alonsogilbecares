@@ -8,7 +8,7 @@ body.landing.portfolio #banner {
 }
 
 body.landing.portfolio #banner > div.categorias > a {
-  margin: 15px;
+  margin: 8px;
 }
 
 .wrapper.style1 {
@@ -70,7 +70,7 @@ body.landing a {
 }
 
 body.landing.portfolio h1 {
-  margin: 0;
+  margin: 0.5rem;
   padding: 0;
 }
 
@@ -81,7 +81,7 @@ body.landing.index {
 }
 
 body.landing.portfolio #page-wrapper {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 body.landing.portfolio section form .barra-busqueda {
@@ -128,8 +128,37 @@ body.landing.portfolio .grid .item {
   position: absolute;
   padding: 0;
   margin: 1rem;
-  width: calc(33.333333% - 2rem);
   cursor: pointer;
+}
+
+body.landing.portfolio .grid .item .item-content {
+  margin: auto;
+}
+
+body.is-mobile.landing #banner {
+  background-image: none;
+}
+
+@media (min-width: 276px) {
+  body.landing.portfolio .grid .item {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media (min-width: 576px) {
+  body.landing.portfolio .grid .item {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (min-width: 768px) {
+  body.landing.portfolio .grid .item {
+    width: calc(33.333% - 2rem);
+  }
+}
+
+#banner {
+  padding: 0;
 }
 
 body.landing.portfolio .grid .item .item-content {
@@ -179,10 +208,11 @@ body.landing.portfolio .grid .item .item-content:hover .vertical-line {
 body.landing.portfolio .grid-imagenes-cargadas {
   opacity: 1;
 }
-
+/*
 #footer {
   height: 750px;
 }
+*/
 
 #p-contact {
   letter-spacing: 1.2px;
@@ -195,7 +225,7 @@ body.landing.portfolio .grid-imagenes-cargadas {
 }
 
 #banner > div.logo > h1 {
-  font-size: 28px;
+  font-size: 23px;
 }
 
 .before,
@@ -288,15 +318,15 @@ body.landing.portfolio .grid-imagenes-cargadas {
   }
 }
 
-
-#data > h2:nth-child(1), #data > p:nth-child(2) {
-text-shadow: 0 0 10px black, .5px 2px 30px black;
+#data > h2:nth-child(1),
+#data > p:nth-child(2) {
+  text-shadow: 0 0 10px black, 0.5px 2px 30px black;
 }
 
-.actions > li:nth-child(1) > a:nth-child(1){
-text-shadow: 0 5 10px black, 2px 2px 25px black;}
+.actions > li:nth-child(1) > a:nth-child(1) {
+  text-shadow: 0 5 10px black, 2px 2px 25px black;
+}
 
-.actions > li:nth-child(2) > a:nth-child(1){
-
+.actions > li:nth-child(2) > a:nth-child(1) {
   text-shadow: 0 5 10px black, 2px 2px 25px black;
 }
