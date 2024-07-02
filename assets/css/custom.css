@@ -135,8 +135,9 @@ body.landing.portfolio .grid .item .item-content {
   margin: auto;
 }
 
-body.is-mobile.landing #banner {
+body.is-mobile.portfolio #banner {
   background-image: none;
+  padding: 0;
 }
 
 @media (min-width: 276px) {
@@ -155,10 +156,6 @@ body.is-mobile.landing #banner {
   body.landing.portfolio .grid .item {
     width: calc(33.333% - 2rem);
   }
-}
-
-#banner {
-  padding: 0;
 }
 
 body.landing.portfolio .grid .item .item-content {
@@ -208,11 +205,6 @@ body.landing.portfolio .grid .item .item-content:hover .vertical-line {
 body.landing.portfolio .grid-imagenes-cargadas {
   opacity: 1;
 }
-/*
-#footer {
-  height: 750px;
-}
-*/
 
 #p-contact {
   letter-spacing: 1.2px;
